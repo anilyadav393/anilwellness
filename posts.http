@@ -1,0 +1,47 @@
+GET http://localhost:3000/posts/
+Authorization: Bearer JWT_TOKEN
+
+
+###
+
+GET http://localhost:3000/posts/1/
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456",
+    "gender":"male",
+    "location":"hyderabad"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "anil123",
+    "password": "anil@123"
+}
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "username": "anil123",
+    "password": "anil@123",
+    "gender":"male",
+    "location":"hyderabad"
+}
